@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/photon/static/css/main.cf44bb16.css",
-    "main.js": "/photon/static/js/main.42e18366.js",
+    "main.js": "/photon/static/js/main.aca6aa18.js",
     "static/js/787.624ce7fd.chunk.js": "/photon/static/js/787.624ce7fd.chunk.js",
     "index.html": "/photon/index.html",
     "main.cf44bb16.css.map": "/photon/static/css/main.cf44bb16.css.map",
-    "main.42e18366.js.map": "/photon/static/js/main.42e18366.js.map",
+    "main.aca6aa18.js.map": "/photon/static/js/main.aca6aa18.js.map",
     "787.624ce7fd.chunk.js.map": "/photon/static/js/787.624ce7fd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cf44bb16.css",
-    "static/js/main.42e18366.js"
+    "static/js/main.aca6aa18.js"
   ]
 }
