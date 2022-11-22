@@ -1,18 +1,14 @@
-import {authURI} from './Authentication';
-import {fillDatabase} from './PDM';
-import {useEffect, useState} from 'react';
-import './../CSS/Homepage.css';
+"use client"
+import {authURI} from '../Authentication/page';
+import {fillDatabase} from '../PDM';
+import './Homepage.css';
+import {useEffect, useState} from "react";
 
-function Homepage() {
-  const [token, setToken] = useState("")
-  useEffect(() => {
-    setToken(window.localStorage.getItem("token"))
-    document.title = "Photon"
-  }, [token])
-
-
-  let exploreMessage = "Begin by exploring your own profile from a new perspective, or maybe discovering how you compare to others? It's your choice.";
-  let welcomeMessage = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+function Page() {
+    const [token, setToken] = useState<string>('');
+    useEffect(() => setToken(window.localStorage.getItem("token")), []);
+    const exploreMessage = "Begin by exploring your own profile from a new perspective, or maybe discovering how you compare to others? It's your choice.";
+    const welcomeMessage = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
   return (
       <div className='homepage-container'>
         <div className='top-container'>
@@ -28,8 +24,8 @@ function Homepage() {
               </>
               :
               <div>
-                <a className="auth-button" href='/profile#me'>Explore your profile</a>
-                <a className="auth-button" href=''>Compare to others</a>
+                <a className="auth-button" href='/Profile#me'>Explore your profile</a>
+                <a className="auth-button" href='app/Homepage/page.tsx'>Compare to others</a>
                 <a className="auth-button" onClick={fillDatabase}>PH: Fill database</a>
               </div>
           }
@@ -57,4 +53,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default Page;

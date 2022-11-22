@@ -1,6 +1,8 @@
 {
-    "cSpell.words": [
-        "datapoint",
-        "Datapoints"
-    ]
+  "cSpell.words": [
+    "datapoint",
+    "Datapoints"
+  ],
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }

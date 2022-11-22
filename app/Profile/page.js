@@ -1,8 +1,9 @@
+"use client";
 import React, {useEffect, useState} from 'react';
-import './../CSS/Profile.css';
-import './../CSS/Graph.css'
-import {getPlaylists, retrieveDatapoint, retrieveUser} from './PDM';
-import arrow from './Arrow.png'
+import './Profile.css';
+import './Graph.css'
+import {getPlaylists, retrieveDatapoint, retrieveUser} from '../PDM';
+import arrow from '../../public/Arrow.png'
 import {Chip} from '@mui/material';
 import {createTheme} from '@mui/material/styles';
 import {ThemeProvider} from '@emotion/react';
@@ -10,7 +11,7 @@ import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import PersonIcon from '@mui/icons-material/Person';
 
 
-const Profile = () => {
+const Page = () => {
 
     const theme = createTheme({
         palette: {
@@ -411,7 +412,7 @@ const Profile = () => {
                 :
                 <div className='wrapper'>
                     <div className='user-container'>
-                        <img className='profile-picture' alt='Profile' src={currentUser.profilePicture}></img>
+                        <img className='profile-picture' alt='Page' src={currentUser.profilePicture}></img>
                         <div style={{display: `flex`, flexDirection: `column`, paddingLeft: `5px`}}>
                             <div className='username'>{currentUser.username}</div>
                             {userID !== "me" ?  <a className={"compare-button"} href={`/compare#${window.localStorage.getItem("userID")}&${currentUser.userID}`}>Compare</a> : <></>}
@@ -552,4 +553,4 @@ const Profile = () => {
     )
 }
 
-export default Profile
+export default Page

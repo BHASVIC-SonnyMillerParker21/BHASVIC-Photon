@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {authURI} from './Authentication';
+import {authURI} from './Authentication/page';
 
 /**
  * Makes requests data from the Spotify from the

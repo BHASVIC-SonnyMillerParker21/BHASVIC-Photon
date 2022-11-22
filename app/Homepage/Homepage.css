@@ -28,7 +28,7 @@
   width: max-content;
   padding: 5px 30px 5px 30px;
   margin-left: 20px;
-  transition: all 0.2s ease-out;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out, box-shadow 0.2s ease-out;
 }
 
 .auth-button:hover{

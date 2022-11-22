@@ -1,7 +1,7 @@
 // noinspection HtmlUnknownAnchorTarget
 
 import React, {useEffect, useState} from 'react';
-import './../CSS/TopBar.css';
+import './TopBar.css';
 import {ClickAwayListener, FormControl, TextField} from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import PersonIcon from '@mui/icons-material/Person';
@@ -124,8 +124,8 @@ const TopBar = () => {
     return (
         <header className="header">
             <div className="element-container">
-                <a className='element' href='/'><HomeIcon fontSize='large'/><p>Home</p></a>
-                <a className='element' href='profile#me'><PersonIcon fontSize='large'/><p>Your profile</p></a>
+                <a className='element' href='/layout.js'><HomeIcon fontSize='large'/><p>Home</p></a>
+                <a className='element' href='app/Profile/page.js'><PersonIcon fontSize='large'/><p>Your profile</p></a>
                 <div className='element'>
                     <ClickAwayListener onClickAway={handleClickAway}>
                         <FormControl variant="standard">
